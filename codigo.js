@@ -5,6 +5,7 @@ function showSection(sectionId) {
         sections[i].style.display = 'none';
     }
 
+
     // Muestra la sección seleccionada
     var section = document.getElementById(sectionId);
     if (section) {
@@ -76,7 +77,7 @@ function isMobile() {
 
 function redirectToMobile() {
     if (isMobile()) {
-        window.location.href = "mobile.html";  // Redirigir al HTML para móviles
+        window.location.href = "www.google.com";  // Redirigir al HTML para móviles
     }
 }
 
