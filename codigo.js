@@ -77,8 +77,12 @@ function isMobile() {
 
 function redirectToMobile() {
     if (isMobile()) {
+        alert("Ismobile")
         window.location.href = "www.google.com";  // Redirigir al HTML para móviles
+    } else {
+        alert("IsNOTmobile")
     }
+
 }
 
 // Llama a la función cuando la página se carga
