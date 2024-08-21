@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIUNA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bodi">
+    <div class="header">
+    </div>
+
+    <div class="sub-header">
+        Bienvenidos a la Plataforma de Información de FIUNA CIVIL
+    </div>
+
+    <div class="navbar">
+        <button class="menu-btn" id="menu-btn"  onclick="toggleMenu()">&#9776;</button>
+        <div class="nav-items">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="showSection('home')">Inicio</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Grupos de WhatsApp</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('semestre5')">5to Semestre</a>
+                    <a href="#" onclick="showSection('semestre7')">7mo Semestre</a>
+                    <a href="#" onclick="showSection('semestre8')">8vo Semestre</a>
+                    <a href="#" onclick="showSection('semestre9')">9no Semestre</a>
+                    <a href="#" onclick="showSection('semestre10')">10mo Semestre</a>
+                    <div class="submenu">
+                        <a name="optativas">Optativas</a>
+                        <div class="submenu-content">
+                            <a href="#" onclick="showSection('iConstrucciones')">Intensificación Construcciones</a>
+                            <a href="#" onclick="showSection('iSaneamientoHidráulica')">Intensificación Saneamiento e Hidráulica</a>
+                            <a href="#" onclick="showSection('iTransporteVias')">Intensificación Transporte y Vias</a>
+                            <a href="#" onclick="showSection('comunTodas')">Común a Todas</a>
+                        </div>
+                    </div>
+                    <a href="#" onclick="showSection('complementarias')">Complementarias</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Clases</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('horarioClasesExamenes')">Horario de Clases y Exámenes 2024/02</a>
+                    <a href="#" onclick="showSection('distribuciónAulas')">Distribución de Aulas y reservas de Computación</a>
+                    <a href="#" onclick="showSection('calendario')">Calendario Academico </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Guía de Pasantías y TFG</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showSection('pasantía')">Proceso de pasantía</a>
+                    <a href="#" onclick="showSection('TFG')">Proceso para TFG</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="showSection('abaco')">Ábaco nuevo</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="showSection('administrativo')">Administrativo</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="showSection('contacto')">Contacto</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div id="home" class="section">
+            <h1>Bienvenido a la Página de Inicio</h1>
+            <p>Aquí va el contenido principal de la página de inicio.</p>
+        </div>
+        <div id="semestre5" class="section" style="display:none;">
+            <h1>Grupos de 5to semestre</h1>
+            <div class="button-container">
+                <a href="https://chat.whatsapp.com/C8KP3f3wWQv6Xuf7qdVF33" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de M.M. 2
+                </a>
+                <a href="https://chat.whatsapp.com/BfjvDmFO2DOHIpRGgyRAlt" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Estructuras 2
+                </a>
+                <a href="https://chat.whatsapp.com/KxyRnqFCw9D2oQ7RboBpUh" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Geotecnia 1
+                </a>
+                <a href="https://chat.whatsapp.com/JtR9cGoeN7aE2C08oNIW2C" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Topografia
+                </a>
+                <a href="https://chat.whatsapp.com/L8Jzo3srXqBHQBd5alHcVx" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Hidráulica 1
+                </a>
+                <a href="https://chat.whatsapp.com/Bjq3lUcdC0XKOtlqtHUaU3" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de M.O.C. 2
+                </a>
+                <!-- Agrega más grupos si es necesario -->
+            </div>
+        </div>
+        <div id="semestre7" class="section" style="display:none;">
+            <h1>Grupos de 7mo semestre</h1>
+            <p>Aquí va la información sobre el 7mo semestre.</p>
+            <div class="button-container">
+                <a href="https://chat.whatsapp.com/LY9fpG0SSxF5jqFrdNEVfM" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de H°A° 1
+                </a>
+                <a href="https://chat.whatsapp.com/HpOGpQ501m4CyssJwcy13M" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Vías 1
+                </a>
+                <a href="https://chat.whatsapp.com/KNTLC9Is4Jz1jq7QbBkDL0" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Construcciones 1
+                </a>
+                <a href="https://chat.whatsapp.com/Ev6C9UWPMG98u0fZ6pQmxK" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de E.I.E.
+                </a>
+
+                <!-- Agrega más grupos si es necesario -->
+            </div>
+        </div>
+        <div id="semestre8" class="section" style="display:none;">
+            <h1>Grupos de 8vo semestre</h1>
+            <p>Aquí va la información sobre el 10mo semestre.</p>
+            <div class="button-container">
+                <a href="" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo 10mo Civil
+                </a>
+                <a href="https://chat.whatsapp.com/FfyLnd44IeO42xAgss5hWb" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de H°A° 2
+                </a>
+                <a href="https://chat.whatsapp.com/ESszxVCwyeBFyuvu30kt5g" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Vías 2
+                </a>
+                <a href="https://chat.whatsapp.com/B8QKPEQczjfGqdrUClrl84" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de SMA 1
+                </a>
+                <a href="https://chat.whatsapp.com/J28VYKHdtAn4Ds3D5snm6n" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Hidrotecnia 1
+                </a>
+                <a href="https://chat.whatsapp.com/CIohGu4G1IGBkJF55kjsaC" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de I.E.E.
+                </a>
+                <!-- Agrega más grupos si es necesario -->
+            </div>
+        </div>
+        <div id="semestre9" class="section" style="display:none;">
+            <h1>Grupos de 9no semestre</h1>
+            <p>Aquí va la información sobre el 9no semestre.</p>
+            <div class="button-container">
+                <a href="https://chat.whatsapp.com/FJsdlh230RtH0jRpYZk8YO" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo 9no Civil
+                </a>
+                <a href="https://chat.whatsapp.com/FOMkPeNm8T542LBKIyeVfW" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Hidrotecnia 1
+                </a>
+                <a href="https://chat.whatsapp.com/Loedg6VoXPqHmPEMvFsG7C" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Vías 3
+                </a>
+                <a href="https://chat.whatsapp.com/BTQIoiDt1ZkDQK0670v9Ee" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de PyC
+                </a>
+                <a href="https://chat.whatsapp.com/Ere26t660zYFjGUMQN9WI1" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de S.M.A 2
+                </a>
+
+                <!-- Agrega más grupos si es necesario -->
+            </div>
+        </div>
+        <div id="semestre10" class="section" style="display:none;">
+            <h1>Grupos de 10mo semestre</h1>
+            <p>Aquí va la información sobre el 10mo semestre.</p>
+            <div class="button-container">
+                <a href="https://chat.whatsapp.com/FFuoq5kojXI2htOaKeeUQZ" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo 10mo Civil
+                </a>
+                <a href="https://chat.whatsapp.com/CuansYMyKz4A5x3vYCbimB" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Construcciones 3
+                </a>
+                <a href="https://chat.whatsapp.com/I7RBMDxnl7bABwF4iGcxVZ" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Puentes
+                </a>
+                <a href="https://chat.whatsapp.com/BTrCNgzhCpfIYpujMaPkUV" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Puertos
+                </a>
+                <a href="https://chat.whatsapp.com/BCzAHP2oNtb9SsntmzVEg1" class="button" target="_blank">
+                    <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Obras Fluviales
+                </a>
+                <!-- Agrega más grupos si es necesario -->
+            </div>
+        </div>
+
+        <div id="iConstrucciones" class="section" style="display:none;">
+            <h1>Grupos de las Optativas de Intensificación de Construcciones </h1>
+            <p>Aquí va la información sobre las optativas.</p>
+            <a href="https://chat.whatsapp.com/HF4C1e38LUVGRXsM9iYiHt" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de H° Pretensado
+            </a>
+            <a href="https://chat.whatsapp.com/ClpOEYNBy9yErIwneuQdYc" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Elementos Finitos
+            </a>
+            <a href="https://chat.whatsapp.com/GaAArCgrxYv0xVw0yMndJH" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Avalúo y Tasación
+            </a>
+        </div>
+        <div id="iSaneamientoHidráulica" class="section" style="display:none;">
+            <h1>Grupos de las Optativas de Intensificación de Saneamiento e Hidráulica </h1>
+            <p>Aquí va la información sobre las optativas.</p>
+            <a href="https://chat.whatsapp.com/I7PNxX3WvR616qao4k8sQX" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de AMH
+            </a>
+            <a href="https://chat.whatsapp.com/HcU7CHD2AWOGvd3opPhmac" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Tratamiento de aguas
+            </a>
+        </div>
+        <div id="iTransporteVias" class="section" style="display:none;">
+            <h1>Grupos de las Optativas de Intensificación de Transporte y Vías </h1>
+            <p>Aquí va la información sobre las optativas.</p>
+            <a href="https://chat.whatsapp.com/Cmpme3IxVSP04JUFiC5wW4" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Mantenimientos de caminos
+            </a>
+            <a href="https://chat.whatsapp.com/L6LeS8emxPBGkJ33as1fUQ" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de DGV
+            </a>
+        </div>
+        <div id="comunTodas" class="section" style="display:none;">
+            <h1>Grupos de las Optativas Común  a todas </h1>
+            <p>Aquí va la información sobre las optativas.</p>
+            <a href="https://chat.whatsapp.com/LqCETuzWD7S5S2SvNErefU" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Consos
+            </a>
+        </div>
+    </div>
+    <div id="complementarias" class="section" style="display:none;">
+        <h1>Grupos de Complementarias</h1>
+        <div class="button-container">
+            <a href="https://chat.whatsapp.com/FHtZGJy8Fdm7vx4XEhrHFD" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo Intro A
+            </a>
+            <a href="https://chat.whatsapp.com/FF20SFMlNizGpU4tLlXKIT" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo Intro B
+            </a>
+            <a href="https://chat.whatsapp.com/LrGYpHbZUji6h3zcBkTJyl" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de O.E. A
+            </a>
+            <a href="https://chat.whatsapp.com/DePn4b0BF6zCtb7vJycFJp" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de O.E. B
+            </a>
+            <a href="https://chat.whatsapp.com/JlqL9v9FV6u82tAz70KZf1" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de O.E. C
+            </a>
+            <a href="https://chat.whatsapp.com/DR7PK5WqeaJ9304adt9ve9" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Legis A
+            </a>
+            <a href="https://chat.whatsapp.com/FFZcjUnmBi6DsP3iBXU6Mj" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Legis B
+            </a>
+            <a href="https://chat.whatsapp.com/HhM19xt35yp8FROl6yqHkf" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Legis C
+            </a>
+            <a href="https://chat.whatsapp.com/D44G54s6TpJLy0ZiMmLBVV" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Conta A
+            </a>
+            <a href="https://chat.whatsapp.com/B7LeQmH4sPo158MMZQtjGy" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Conta B
+            </a>
+            <a href="https://chat.whatsapp.com/KxbahtIfBjE7IL34p2DhEl" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Gestión A
+            </a>
+            <a href="https://chat.whatsapp.com/ElWKUu8MpO0ASw9QBI4F99" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Gestión B
+            </a>
+            <a href="https://chat.whatsapp.com/Jup8lDjtZyAEQFafRSGncl" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Seguridad A
+            </a>
+            <a href="https://chat.whatsapp.com/CKzDg8U8Bf466eMN7lNAxL" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Seguridad B
+            </a>
+            <a href="https://chat.whatsapp.com/LCzffds89UjB5nH2GEBJCt" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Formu A
+            </a>
+            <a href="https://chat.whatsapp.com/Fgr3iZ9JoUTAfFwnPSl2Pd" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Formu B
+            </a>
+            <!-- Agrega más grupos si es necesario -->
+        </div>
+    </div>
+    <div id="horarioClasesExamenes" class="section" style="display:none;">
+        <h1 class="titulo">Uso de iFrame en HTML</h1>
+        <iframe name="marco1" class="marco" src="mensajeInicial.html"></iframe>
+        <div class="centrar-botones">
+            <a href="https://docs.google.com/spreadsheets/d/11bcj9gQ5RyhHb-inDD-NL7hOS2Kp9VsiG4Htf73tqCY/edit?usp=sharing" target="marco1" class="boton">Ver Horario de examenes parciales</a>
+            <a href="" target="marco1" class="boton">Ver Horario de examenes finales</a>
+            <a href="" target="marco1" class="boton">Ver Horario de Clases 2024/02</a>
+        </div>
+    </div>
+
+    <div id="distribuciónAulas" class="section" style="display:none;">
+        <h1 class="titulo">Uso de iFrame en HTML</h1>
+        <iframe name="marco3" class="marco" src="mensajeInicial.html"></iframe>
+        <div class="centrar-botones">
+            <a href="https://docs.google.com/spreadsheets/d/1kO0J6h6HiD9Pt84mjKedgPE0t37aWLnxecfHLic0rQw/edit" target="marco3" class="boton">Ver Distribución de Aulas</a>
+            <a href="http://reservastic.ing.una.py/Web/view-schedule.php#" target="marco3" class="boton">Ver Reservas de Computación</a>
+        </div>
+    </div>
+    <div id="calendario" class="section" style="display:none;">
+        <h1 class="titulo">Uso de iFrame en HTML</h1>
+        <iframe name="marco4" class="marco" src="Calendario_Académico_FIUNA_C2-2024.pdf"></iframe>
+
+    </div>
+    <div id="pasantía" class="section" style="display:none;">
+        <h1 class="titulo">Procedimiento para la Realización de Pasantías</h1>
+        <h2>Requisitos para empezar la pasantía</h2>
+        <ul>
+            <li>Los estudiantes no deben adeudar más de 3 asignaturas de semestres inferiores al 8vo. para su inscripción a la asignatura de Pasantía.</li>
+            <li>Matricularse en el año lectivo e inscribirse en la asignatura de Pasantía.</li>
+        </ul>
+        <h2>1. Documentos a Presentar</h2>
+        <h3>Pasantía Regular</h3>
+        <p><strong>Solicitud de Pasantía:</strong> Debes enviar la solicitud de pasantía al correo de la mesa de entrada (<a href="mailto:mesadeentrada@ing.una.py">mesadeentrada@ing.una.py</a>) correspondiente.</p>
+        <p><strong>Plan de Trabajo y Carta de Compromiso:</strong> Estos documentos deben ser enviados al correo oficial de pasantías (<a href="mailto:pasantias@ing.una.py">pasantias@ing.una.py</a>).</p>
+        <h3>Convalidación de Trabajo (Reconocimiento):</h3>
+        <p><strong>Solicitud de Pasantía (Reconocimiento):</strong> Si deseas convalidar tu empleo actual como pasantía, marca la opción "Por Reconocimiento" en la solicitud y envíala al correo de la mesa de entrada.</p>
+        <p><strong>Constancia de Actividades Realizadas:</strong> Este documento debe ser similar al plan de trabajo y se debe enviar tanto al correo de pasantías como a la mesa de entrada.</p>
+        <h2>2. Procedimiento</h2>
+        <h3>Envío de Documentos:</h3>
+        <p>Envía los documentos requeridos según tu caso (pasantía regular o convalidación de trabajo) a los correos indicados.</p>
+        <p>Los responsables de pasantías te responderán vía <a href="http://apps.ing.una.py/gdoc2/consulta" target="_blank">GDoc.</a></p>
+        <p class="chica">Para el caso de pasantía regular, el plan de trabajo debe ser firmado por el Ing. Hermann, y la carta de compromiso debe ser firmada tanto por el Ing. Hermann como por la Ing. Pablina.</p>
+        <h3>Presentación del Informe Final:</h3>
+        <p>Al finalizar el período de clases, es obligatorio presentar el Informe de Pasantía en las fechas establecidas.</p>
+        <h2>3. Consideraciones Finales</h2>
+        <p>Asegúrate de seguir los pasos de envío y presentación correctamente para evitar retrasos en el proceso de aprobación de tu pasantía.</p>
+        <p>Mantente al tanto de las fechas y plazos para la entrega de documentos y el informe final.</p>
+        <h3><a href="https://www.ing.una.py/?page_id=7185" target="_blank">Información General</a></h3>
+        <h3><a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vToBiWlO7sh-fALPjjJw5WY8xBBMQMeM1o-F8E9NzYZwGc05Qq_yfj3yO9J3-te-Q/pubhtml?gid=1413260958&single=true" target="_blank">Empresas con Convenio con FIUNA</a></h3>
+        <h3><a href="https://www.ing.una.py/?page_id=35022" target="_blank">Formularios de pasantía</a></h3>
+        <h2>Para mayor info el grupo</h2>
+        <div class="button-container">
+            <a href="https://chat.whatsapp.com/LPGIqlS4Onk1MIkXyoXfCw" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de Pasantía Civil
+            </a>
+        </div>
+    </div>
+    <div id="TFG" class="section" style="display:none;">
+        <h1 class="titulo">Procedimiento para TFG</h1>
+        <h2>Requisitos para empezar la pasantía</h2>
+        <ul>
+            <li>Los estudiantes no deben adeudar más de 3 asignaturas de semestres inferiores al 9no. para su inscripción a la asignatura de TFG.</li>
+            <li>Matricularse en el año lectivo e inscribirse en la asignatura de TFG.</li>
+        </ul>
+        <h2>Paso 1: Selección del Tema</h2>
+        <p>Existen dos opciones para la elección del tema de tesis:</p>
+        <h3>Opción 1: Elección Autonóma del Tema</h3>
+        <p>Seleccione un tema de su interés, busque un tutor especializado en esa área y consulte si está dispuesto a supervisar su proyecto. En caso de que el tutor no pueda aceptar, puede buscar otros tutores dentro de la misma área temática.</p>
+        <h3>Opción 2: Recomendación del Tutor</h3>
+        <p>Consulte con un tutor sobre la posibilidad de trabajar juntos en su tesis. Pregunte si el tutor tiene algún tema de tesis disponible para recomendar. Luego, elija el tema sugerido por el tutor.</p>
+        <h2>Paso 2: Elaboración del Anteproyecto</h2>
+        <p>El anteproyecto debe ser un resumen detallado de la idea de su tesis, e incluir los siguientes componentes:</p>
+        <ul>
+            <li><strong>Título de la Tesis</strong></li>
+            <li><strong>Introducción</strong></li>
+            <li><strong>Justificación</strong></li>
+            <li><strong>Objetivos Generales y Específicos</strong></li>
+            <li><strong>Alcance</strong></li>
+            <li><strong>Metodología de Trabajo</strong></li>
+            <li><strong>Tutores Propuestos</strong></li>
+            <li><strong>Cronograma de Actividades</strong></li>
+
+        </ul>
+        <h2>Paso 3: Envío y Aprobación del Anteproyecto</h2>
+        <p>Envíe el anteproyecto a su tutor para su revisión y aprobación. El anteproyecto debe ser aprobado por el tutor antes de proceder al siguiente paso.</p>
+        <h2>Paso 4: Preparación de la Presentación</h2>
+        <p>Desarrolle una presentación en PowerPoint (PPT) basada en el contenido de su anteproyecto.</p>
+        <h2>Paso 5: Coordinación para la Presentación del Anteproyecto</h2>
+        <p>Coordine con la Ingeniera Pablina para agendar una reunión en la que presentará su anteproyecto utilizando el PPT preparado. Durante esta reunión, la Ingeniera Pablina proporcionará retroalimentación y sugerencias para posibles modificaciones o aclaraciones.</p>
+        <h2>Paso 6: Entrega de Documentos</h2>
+        <p>Una vez corregido el anteproyecto según las indicaciones de la Ingeniera Pablina, proceda a entregar el anteproyecto impreso y firmado por su tutor en la mesa de entrada, junto con la solicitud de Aprobación de Tema disponible en la página de FIUNA. Alternativamente, también puede enviar la solicitud de Aprobación de Tema al correo de la mesa de entrada, adjuntando la confirmación del correo en el cual el tutor aprueba el anteproyecto.</p>
+        <h2>Paso 7: Aprobación Final y Desarrollo de la Tesis</h2>
+        <p>Espere la recepción del correo de aprobación del tema de tesis. Una vez aprobado, puede comenzar con el desarrollo de su tesis. Recuerde que dispone de un período de dos años para presentar la tesis finalizada.</p>
+        <p>¡Éxitos en su proyecto de tesis!</p>
+
+        <h2>Para mayor info el grupo</h2>
+        <div class="button-container">
+            <a href="https://chat.whatsapp.com/JaW2SFtHzc6ARXK2OHTwCK" class="button" target="_blank">
+                <img src="icons8-whatsapp-48.png" alt="WhatsApp Icon" class="icon"> Grupo de TFG
+            </a>
+        </div>
+        <h2>Ir a:</h2>
+        <div class="linkTFG">
+            <h3><a href="https://www.ing.una.py/?page_id=28747" target="_blank" >Formularios de TFG</a></h3>
+            <h3><a href="https://www.ing.una.py/resoluciones2017/reglamento-tfg479-2012.PDF" target="_blank">Reglamento TFG</a></h3>
+            <h3><a href="https://drive.google.com/file/d/1P8M0gdjLvsAYlJTuAynH1HzM1LhIxpPM/view" target="_blank">Líneas de Investigación</a></h3>
+            <h3><a href="https://docs.google.com/document/d/1Q5DAnEmfVbGnLwirbY2c7kwayU24Zva4/edit" target="_blank">TEMPLATE TFG</a></h3>
+            <h3><a href="https://docs.google.com/document/d/1gsx6O8xvaerTKgGWHYjKxlScgOVS8gWV/edit" target="_blank">Plantilla Anteproyecto Final TFG</a></h3>
+            <h3><a href="https://drive.google.com/file/d/1aYC_-iwA_8lTAJGx2R35YX0M7TWXQcwm/view" target="_blank">Guía para TFG</a></h3>
+        </div>
+
+        <div class="slider-container">
+            <h2>Preguntas frecuentes</h2>
+            <button class="arrow left-arrow" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="preguntas">
+                <div class="pregunta">
+                    <h1>¿Cuánto se paga si llevo solo TFG?</h1>
+                    <p>Matricula y las 4 cuotas como si fuera una materia más. Se puede pagar en cualquier momento sin multa</p>
+                </div>
+                <div class="pregunta">
+                    <h1>¿Por qué no corre de archivo mi solicitud?</h1>
+                    <p>Debes enviar al correo de archivo la foto del pago de matricula del semestre actual</p>
+                </div>
+
+
+            </div>
+            <button class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+    </div>
+    <div id="administrativo" class="section" style="display:none;">
+        <div class="horarios-container">
+            <h2>Horarios a Tener en Cuenta</h2>
+            <p class="area">Caja:</p>
+            <p class="horario"><strong>Lun -</strong> Vie 7:30hs a 19hs</p>
+            <p class="horario"><strong>Sab -</strong> 8hs a 12hs</p>
+            <p class="horario"><strong>Tel.: </strong>1213 (FIUNA)</p>
+            <p class="horario"><strong>Tel.: </strong>2213 (CITEC)</p>
+            <p class="area">Mesa de Entrada:</p>
+            <p class="horario"><strong>Lun -</strong> Vie 8hs a 18hs</p>
+            <p class="horario"><strong>Sab -</strong> 8hs a 12hs</p>
+            <p class="horario"><strong>Correo: </strong><a href="mailto:mesadeentrada@ing.una.py" class="horario">mesadeentrada@ing.una.py</a></p>
+            <p class="horario"><strong>Tel.: </strong>1100</p>
+            <p class="area">Atal:</p>
+            <p class="horario"><strong>Lun -</strong> Vie 8hs a 18hs</p>
+            <p class="horario"><strong>Sab -</strong> 8hs a 12hs</p>
+            <p class="horario"><strong>Correo: </strong><a href="mailto:atal@ing.una.py" class="horario">atal@ing.una.py</a></p>
+            <p class="horario"><strong>Tel.: </strong>1102</p>
+            <p class="telefonoFiuna"><strong>Teléfono FIUNA: </strong>(021) 585 584/1</p>
+            <a href="https://www.instagram.com/p/CcBognEPbUL/?igshid=YmMyMTA2M2Y%3D&img_index=2" class="horario" target="_blank">Si buscas otros nros de otros departamentos, click aquí</a>
+        </div>
+    </div>
+    <div id="abaco" class="section" style="display:none;">
+        <img src="Nuevo ábaco.jpg" alt="Descripción de la imagen" class="responsive-img" >
+    </div>
+    <!-- Agrega aquí más secciones para semestre7, semestre8, optativas, examenes, recursos -->
+</div>
+</div>
+
+
+<script src="codigo.js"></script>
+</body>
+</html>
