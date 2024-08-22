@@ -10,7 +10,7 @@ body {
     max-width: 80%;
     margin: auto;
 
-    padding: 0 1rem; /* Padding de 0 en la parte superior e inferior, 1rem a los costados */
+    padding: 0 1rem 1rem 1rem; /* Padding de 0 en la parte superior e inferior, 1rem a los costados */
     box-sizing: border-box; /* Incluye padding y borde en el tamaño total del contenedor */
 }
 /* Encabezado fino con el nombre de la facultad */
@@ -88,7 +88,7 @@ ul li ul li ul {
     width: 100%;
     text-align: left;
 }
-.section .button{
+.section .buton{
     display: none;
 }
 @media (max-width: 768px) {
@@ -103,6 +103,7 @@ ul li ul li ul {
         display: none;
         width: 100%;
     }
+    
 
     ul li {
         width: 100%;
@@ -156,7 +157,7 @@ ul li ul li ul {
         display: flex;
         flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
         align-items: flex-start; /* Alinea los botones a la izquierda */
-        margin-left: 3.125rem; /* 50px */
+        margin-left: 1rem auto; /* 50px */
     }
     
     /* Estilos para los botones */
@@ -164,7 +165,7 @@ ul li ul li ul {
         display: flex;
         align-items: center;
         padding: 0.9375rem 1.25rem; /* 15px 20px */
-        margin: 0.625rem 0; /* 10px 0 */
+        margin: 0.625rem  auto; /* 10px 0 */
         font-size: 1rem; /* 16px */
         color: #fff;
         background-color: #807923; /* Color verde de WhatsApp */
@@ -180,7 +181,44 @@ ul li ul li ul {
     .section .button:hover {
         background-color: #128C7E; /* Color verde oscuro de WhatsApp */
     }
-  
+    
+    #home a{
+              display: block;
+    }
+
+
+    .section .buton-container {
+        display: flex;
+        flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
+        align-items: flex-start; /* Alinea los botones a la izquierda */
+        margin-left: 1rem auto; /* 50px */
+    }
+    
+    /* Estilos para los botones */
+    .section .buton {
+        display: flex;
+        align-items: center;
+        padding: 0.9375rem 1.25rem; /* 15px 20px */
+        margin: 0.625rem  auto; /* 10px 0 */
+        font-size: 1rem; /* 16px */
+        color: #fff;
+        background-color: #807923; /* Color verde de WhatsApp */
+        border: none;
+        border-radius: 1.25rem; /* 20px */
+        text-decoration: none;
+        cursor: pointer;
+        max-width: 25rem; /* 400px */
+        width: 100%; /* Ancho relativo al contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+    
+    .section .buton:hover {
+        background-color: #128C7E; /* Color verde oscuro de WhatsApp */
+    }
+   .butono{
+    display: inline-block;
+   }
+     
 }
 
 /* Evitar problemas de hover en dispositivos táctiles */
@@ -202,7 +240,7 @@ ul li ul li ul {
     display: flex;
     flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
     align-items: flex-start; /* Alinea los botones a la izquierda */
-    margin-left: 3.125rem; /* 50px */
+    margin-left: 3.125rem ; /* 50px */
 }
 
 /* Estilos para los botones */
@@ -497,4 +535,121 @@ ul li ul li ul {
 
     color:#ddd;
     text-align: center;
+}
+#home {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home .titulo {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#home p strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#home ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+#home ul li {
+    margin-bottom: 0.5rem;
+}
+/* Estilos básicos para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    border-top: 1px solid #444; /* Línea superior para separar del contenido */
+    width: 100%; /* Ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido dentro del footer */
+    padding: 0 1rem; /* Espaciado horizontal interno */
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
+    justify-content: center; /* Centrar los elementos */
+}
+
+/* Estilo de los párrafos dentro del footer */
+footer p {
+    margin: 0.5rem 1rem; /* Espaciado entre párrafos */
+    font-size: 0.875rem; /* Tamaño de fuente */
+}
+
+/* Estilo de los enlaces dentro del footer */
+footer a {
+    color: #00bcd4; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+footer a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+.icono {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+    margin-right: 0.625rem; /* 10px */
+}
+.butono-container {
+    display: flex;
+    flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
+    align-items: flex-start; /* Alinea los botones a la izquierda */
+    margin-left: 3.125rem ; /* 50px */
+}
+
+/* Estilos para los botones */
+.butono {
+    display: inline-block;
+    align-items: center;
+    padding: 0.9375rem 1rem; /* 15px 20px */
+    margin: 0.5rem 0; /* 10px 0 */
+    font-size: 0.8rem; /* 16px */
+    color: #fff;
+    background-color: #000000; /* Color verde de WhatsApp */
+    border: none;
+    border-radius: 1.25rem; /* 20px */
+    text-decoration: none;
+    cursor: pointer;
+    max-width: 5rem; /* 400px */
+    width: 100%; /* Ancho relativo al contenedor */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+
+/* Estilos para la imagen dentro del botón */
+.butono img {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
+    margin-right: 0.625rem; /* 10px */
+ /* Evita espacios adicionales debajo de la imagen */
+}
+
+/* Cambia el color del botón cuando se pasa el ratón por encima */
+.butono:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade un borde sombreado al pasar el mouse */
 }
