@@ -411,6 +411,13 @@ ul li ul li ul {
     margin-bottom: 0.625rem; /* 10px */
 }
 
+#TFG :hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+.linkTFG a{
+    color:#000000
+}
+
 .section srcdoc {
     color: #10811f;
 }
@@ -454,6 +461,7 @@ ul li ul li ul {
     transition: transform 0.5s ease-in-out; /* Transición suave */
     will-change: transform; /* Optimización para transiciones */
     margin: 0.625rem 0.625rem; /* 10px 10px */
+    
 }
 
 /* Estilo para cada pregunta */
@@ -703,12 +711,6 @@ footer a:hover {
     width: 0;
     overflow: hidden;
     z-index: 1;
-}
-#TFG :hover{
-    background-color: rgba(0, 0, 0, 0);
-}
-.linkTFG a{
-    color:#000000
 }
 
 
