@@ -91,6 +91,9 @@ ul li ul li ul {
 .section .buton{
     display: none;
 }
+#home a{
+    display: none;
+}
 @media (max-width: 768px) {
     .bodi{
         font-family: Arial, sans-serif;
@@ -215,10 +218,18 @@ ul li ul li ul {
     .section .buton:hover {
         background-color: #128C7E; /* Color verde oscuro de WhatsApp */
     }
-   .butono{
-    display: inline-block;
-   }
-     
+    .info-butonowh {
+        width: 0 !important; /* Mantiene el botón contraído */
+        opacity: 0 !important;
+    }
+    .info-butonoig {
+        width: 0 !important; /* Mantiene el botón contraído */
+        opacity: 0 !important;
+    }
+    .icono-wrapper {
+        margin-right: 0 !important; /* No desplaza el siguiente icono */
+    }
+
 }
 
 /* Evitar problemas de hover en dispositivos táctiles */
@@ -228,6 +239,7 @@ ul li ul li ul {
         color: black;
         display: block;
     }
+    
 }
 
 /* Estilos para el contenido */
@@ -610,46 +622,89 @@ footer a:hover {
 }
 
 /* Ajustes para pantallas pequeñas */
-.icono {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
-    margin-right: 0.625rem; /* 10px */
-}
-.butono-container {
+.icono-container {
     display: flex;
-    flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
-    align-items: flex-start; /* Alinea los botones a la izquierda */
-    margin-left: 3.125rem ; /* 50px */
-}
-
-/* Estilos para los botones */
-.butono {
-    display: inline-block;
     align-items: center;
-    padding: 0.9375rem 1rem; /* 15px 20px */
-    margin: 0.5rem 0; /* 10px 0 */
-    font-size: 0.8rem; /* 16px */
-    color: #fff;
-    background-color: #000000; /* Color verde de WhatsApp */
-    border: none;
-    border-radius: 1.25rem; /* 20px */
+    gap: 10px;
+}
+.icono-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: margin-right 0.3s ease;
+}
+.icono {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+.icono:hover {
+    transform: scale(1);
+}
+.whatsapp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-color: #25D366;
+}
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+    background-color: #C13584;
+}
+.info-butonowh{
+    display: inline-block;
+    position: absolute;
+    left: 20px; /* Ajustado para que el botón comience pegado a la pelota */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #25d350;
+    color: white;
+    padding: 10px 20px;
+    border-radius:  0 30px 30px 0 ; /* Redondeado solo en un lado para que esté pegado a la pelota */
+    white-space: nowrap;
+    font-size: 14px;
     text-decoration: none;
-    cursor: pointer;
-    max-width: 5rem; /* 400px */
-    width: 100%; /* Ancho relativo al contenedor */
-    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+    width: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.info-butonoig{
+    display: inline-block;
+    position: absolute;
+    left: 20px; /* Ajustado para que el botón comience pegado a la pelota */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #cd25d3;
+    color: white;
+    padding: 10px 20px;
+    border-radius:  0 30px 30px 0 ; /* Redondeado solo en un lado para que esté pegado a la pelota */
+    white-space: nowrap;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+    width: 0;
+    overflow: hidden;
+    z-index: 1;
 }
 
 
-/* Estilos para la imagen dentro del botón */
-.butono img {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
-    margin-right: 0.625rem; /* 10px */
- /* Evita espacios adicionales debajo de la imagen */
+.icono-wrapper:hover .info-butonowh {
+    width: 120px; /* Ancho final del botón desplegado */
+    opacity: 1;
+    margin-left: 0;
 }
-
-/* Cambia el color del botón cuando se pasa el ratón por encima */
-.butono:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añade un borde sombreado al pasar el mouse */
+.icono-wrapper:hover .info-butonoig {
+    width: 100px; /* Ancho final del botón desplegado */
+    opacity: 1;
+}
+.icono-wrapper:hover {
+    margin-right: 130px;  /* Desplaza el siguiente icono cuando se despliega */
 }
