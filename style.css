@@ -514,6 +514,12 @@ ul li ul li ul {
     display: inline-block;
     padding: 1.5rem 1.5rem 0rem;
 }
+.linkTFG a{
+    color:#000000;
+}
+.linkTFG :hover{
+    background-color: transparent;
+}
 .horarios-container {
     background-color: #660000; /* Fondo oscuro */
     padding: 20px;
