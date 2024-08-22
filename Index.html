@@ -10,10 +10,66 @@
 <div class="bodi">
     <div class="header">
     </div>
+
     <div class="sub-header">
         Bienvenidos a la Plataforma de Información de FIUNA CIVIL
     </div>
 
+    <nav>
+        <button class="menu-toggle">Menú</button>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Inicio</a></li>
+            <li>
+                <a href="#">Grupos de WhatsApp</a>
+                <ul>
+                    <li>
+                        <a href="#" onclick="showSection('semestre5')">5to Semestre</a>
+                        <a href="#" onclick="showSection('semestre7')">7mo Semestre</a>
+                        <a href="#" onclick="showSection('semestre8')">8vo Semestre</a>
+                        <a href="#" onclick="showSection('semestre9')">9no Semestre</a>
+                        <a href="#" onclick="showSection('semestre10')">10mo Semestre</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Optativas</a>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="showSection('iConstrucciones')" class="opt">Intensificación Construcciones</a>
+                                <a href="#" onclick="showSection('iSaneamientoHidráulica')" class="opt">Intensificación Saneamiento e Hidráulica</a>
+                                <a href="#" onclick="showSection('iTransporteVias')" class="opt">Intensificación Transporte y Vias</a>
+                                <a href="#" onclick="showSection('comunTodas')" class="opt">Común a Todas</a>
+                            </li>
+                            <!-- <li><a href="#">Intensificación Saneamiento e Hidráulica</a></li>
+                            <li><a href="#">Intensificación Transporte y Vias</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="showSection('complementarias')">Complementarias</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Clases</a>
+                <ul>
+                    <li>
+                        <a href="#" onclick="showSection('horarioClasesExamenes')">Horario de Clases y Exámenes 2024/02</a>
+                        <a href="#" onclick="showSection('distribuciónAulas')">Distribución de Aulas y reservas de Computación</a>
+                        <a href="#" onclick="showSection('calendario')">Calendario Academico </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Guía de Pasantías y TFG</a>
+                <ul>
+                    <li>
+                        <a href="#" onclick="showSection('pasantía')">Proceso de pasantía</a>
+                        <a href="#" onclick="showSection('TFG')">Proceso para TFG</a>                       
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="showSection('administrativo')">Administrativo</a></li>
+        </ul>
+    </nav>
+
+<!--
     <div class="navbar">
         <button class="menu-btn" id="menu-btn"  onclick="toggleMenu()">&#9776;</button>
         <div class="nav-items">
@@ -67,7 +123,7 @@
         </div>
     </div>
 
-
+-->
     <div class="content">
         <div id="home" class="section">
             <h1>Bienvenido a la Página de Inicio</h1>
@@ -291,6 +347,7 @@
             <a href="" target="marco1" class="boton">Ver Horario de examenes finales</a>
             <a href="" target="marco1" class="boton">Ver Horario de Clases 2024/02</a>
         </div>
+       
     </div>
 
     <div id="distribuciónAulas" class="section" style="display:none;">
@@ -364,7 +421,6 @@
             <li><strong>Metodología de Trabajo</strong></li>
             <li><strong>Tutores Propuestos</strong></li>
             <li><strong>Cronograma de Actividades</strong></li>
-
         </ul>
         <h2>Paso 3: Envío y Aprobación del Anteproyecto</h2>
         <p>Envíe el anteproyecto a su tutor para su revisión y aprobación. El anteproyecto debe ser aprobado por el tutor antes de proceder al siguiente paso.</p>
@@ -441,8 +497,50 @@
     <!-- Agrega aquí más secciones para semestre7, semestre8, optativas, examenes, recursos -->
 </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    let currentVisibleSubmenu = null;
 
+    // Manejo del toggle del menú en dispositivos móviles
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
 
+    // Manejo de los submenús
+    document.querySelectorAll('nav ul li > a').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+            let nextEl = this.nextElementSibling;
+
+            // Verifica si el siguiente elemento es un UL (submenú)
+            if (nextEl && nextEl.tagName === 'UL') {
+                e.preventDefault();
+
+                // Si el submenú actual es el mismo que se ha clicado, ocultarlo
+                if (currentVisibleSubmenu === nextEl) {
+                    nextEl.classList.remove('show');
+                    currentVisibleSubmenu = null;
+                } else {
+                    // Ocultar cualquier otro submenú visible
+                    if (currentVisibleSubmenu) {
+                        currentVisibleSubmenu.classList.remove('show');
+                    }
+
+                    // Mostrar el submenú correspondiente
+                    nextEl.classList.add('show');
+                    currentVisibleSubmenu = nextEl;
+                }
+            } else {
+                // Si se hace clic en una opción que no tiene submenú, ocultar cualquier submenú visible
+                if (currentVisibleSubmenu) {
+                    currentVisibleSubmenu.classList.remove('show');
+                    currentVisibleSubmenu = null;
+                }
+            }
+        });
+    });
+});
+
+</script>
 <script src="codigo.js"></script>
 </body>
 </html>
