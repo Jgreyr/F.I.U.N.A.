@@ -88,7 +88,9 @@ ul li ul li ul {
     width: 100%;
     text-align: left;
 }
-
+.section .button{
+    display: none;
+}
 @media (max-width: 768px) {
     .bodi{
         font-family: Arial, sans-serif;
@@ -143,7 +145,41 @@ ul li ul li ul {
         display: block;
         background-color: #1ca35f;
     }
-      
+    .section .marco {
+        display: none;
+    }
+    .section .centrar-botones{
+        display: none;
+    }
+
+    .section .button-container {
+        display: flex;
+        flex-direction: column; /* Cambia a 'row' si prefieres botones en fila */
+        align-items: flex-start; /* Alinea los botones a la izquierda */
+        margin-left: 3.125rem; /* 50px */
+    }
+    
+    /* Estilos para los botones */
+    .section .button {
+        display: flex;
+        align-items: center;
+        padding: 0.9375rem 1.25rem; /* 15px 20px */
+        margin: 0.625rem 0; /* 10px 0 */
+        font-size: 1rem; /* 16px */
+        color: #fff;
+        background-color: #807923; /* Color verde de WhatsApp */
+        border: none;
+        border-radius: 1.25rem; /* 20px */
+        text-decoration: none;
+        cursor: pointer;
+        max-width: 25rem; /* 400px */
+        width: 100%; /* Ancho relativo al contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+    
+    .section .button:hover {
+        background-color: #128C7E; /* Color verde oscuro de WhatsApp */
+    }
   
 }
 
