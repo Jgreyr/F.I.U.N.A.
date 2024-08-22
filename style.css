@@ -704,6 +704,12 @@ footer a:hover {
     overflow: hidden;
     z-index: 1;
 }
+#TFG :hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+.linkTFG a{
+    color:#000000
+}
 
 
 .icono-wrapper:hover .info-butonowh {
