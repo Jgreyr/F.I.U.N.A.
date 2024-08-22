@@ -53,10 +53,12 @@ ul li a {
     padding: 15px 20px;
     color: white;
     text-decoration: none;
+    
 }
 
 ul li a:hover {
     background-color: #555;
+    
 }
 
 /* Submenús */
@@ -67,6 +69,7 @@ ul li ul {
     top: 100%;
     background-color: #333;
     min-width: 200px;
+    z-index: 3;
 }
 
 ul li:hover > ul {
@@ -76,6 +79,8 @@ ul li:hover > ul {
 ul li ul li ul {
     top: 0;
     left: 100%;
+    font-size: 0.75rem;
+    background-color: #646262;
 }
 
 /* Estilos para dispositivos móviles */
@@ -89,9 +94,6 @@ ul li ul li ul {
     text-align: left;
 }
 .section .buton{
-    display: none;
-}
-#home a{
     display: none;
 }
 @media (max-width: 768px) {
@@ -171,7 +173,7 @@ ul li ul li ul {
         margin: 0.625rem  auto; /* 10px 0 */
         font-size: 1rem; /* 16px */
         color: #fff;
-        background-color: #807923; /* Color verde de WhatsApp */
+        background-color: #25D366; /* Color verde de WhatsApp */
         border: none;
         border-radius: 1.25rem; /* 20px */
         text-decoration: none;
@@ -343,7 +345,7 @@ ul li ul li ul {
 
 /* Estilo para los botones */
 .boton {
-    background-color: #1ca35f;
+    background-color: #c40d0d;
     border: 0.125rem solid #ebf3f8; /* 2px */
     text-decoration: none;
     display: inline-block;
@@ -351,10 +353,11 @@ ul li ul li ul {
     flex: 0 1 auto;
     white-space: nowrap;
     border-radius: 0.3125rem; /* 5px */
+    color: #ddd;
 }
 
 .boton:hover {
-    background-color: #10811f;
+    background-color: #a8140a;
     color: white;
 }
 
@@ -629,7 +632,7 @@ footer a:hover {
 }
 .icono-wrapper {
     position: relative;
-    display: flex;
+    display: flex; 
     align-items: center;
     transition: margin-right 0.3s ease;
 }
@@ -646,7 +649,7 @@ footer a:hover {
     z-index: 2;
 }
 .icono:hover {
-    transform: scale(1);
+    transform: scale(0.9);
 }
 .whatsapp {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
