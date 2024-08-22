@@ -439,7 +439,7 @@ ul li ul li ul {
     position: relative;
     width: 100%; /* Ajusta al ancho del contenedor */
     overflow: hidden; /* Oculta el contenido desbordado */
-    padding: 0.625rem 0; /* 10px 0 */
+    padding: 0.625rem ; /* 10px 0 */
 }
 
 /* Contenedor de las preguntas */
@@ -458,7 +458,7 @@ ul li ul li ul {
     box-sizing: border-box;
     text-align: center;
     border: 0.0625rem solid #ddd; /* 1px */
-    margin: 0 0.625rem; /* 10px */
+    margin: 0.625rem; /* 10px */
 }
 
 /* Flechas de navegación */
@@ -497,7 +497,7 @@ ul li ul li ul {
     border-radius: 0.625rem 0.625rem 0 0; /* 10px */
     margin-bottom: 0;
     color: #fff;
-    font-size: 0.9375rem; /* 15px */
+    font-size: 1rem; /* 15px */
     padding: 0.1875rem; /* 3px */
 }
 
@@ -506,7 +506,8 @@ ul li ul li ul {
     background-color: #f3e7e7;
     margin-top: 0;
     border-radius: 0 0 0.625rem 0.625rem; /* 10px */
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.9rem; /* 12px */
+    padding: 0.1875rem;
 }
 .linkTFG{
     margin: 0 2rem auto;
