@@ -53,12 +53,10 @@ ul li a {
     padding: 15px 20px;
     color: white;
     text-decoration: none;
-    
 }
 
 ul li a:hover {
     background-color: #555;
-    
 }
 
 /* Submenús */
@@ -230,6 +228,14 @@ ul li ul li ul {
     }
     .icono-wrapper {
         margin-right: 0 !important; /* No desplaza el siguiente icono */
+    }
+    #TFG ul{
+        display: block;
+        padding: 0.9375rem 1.25rem;
+    }
+    #pasantía ul{
+        display: block;
+        padding: 0.9375rem 1.25rem;
     }
 
 }
@@ -513,12 +519,6 @@ ul li ul li ul {
     margin: 0 2rem auto;
     display: inline-block;
     padding: 1.5rem 1.5rem 0rem;
-}
-.linkTFG a{
-    color:#000000;
-}
-.linkTFG :hover{
-    background-color: transparent;
 }
 .horarios-container {
     background-color: #660000; /* Fondo oscuro */
