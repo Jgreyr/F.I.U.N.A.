@@ -100,6 +100,7 @@ ul li ul li ul {
     background-color: #f0d8d8;
     max-width: 95%;
     margin: auto;
+
     }
     ul {
         flex-direction: column;
@@ -237,6 +238,13 @@ ul li ul li ul {
         display: block;
         padding: 0.9375rem 1.25rem;
     }
+    .boton {
+        font-size: 0.75rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        padding: 6px 12px; /* Ajusta el padding para adaptarse a pantallas más pequeñas */
+    }
+    .responsive-img{
+        display: none;
+    }
 
 }
 
@@ -355,11 +363,13 @@ ul li ul li ul {
     border: 0.125rem solid #ebf3f8; /* 2px */
     text-decoration: none;
     display: inline-block;
-    padding: 0.625rem; /* 10px */
+    padding: 0.625rem 0.5rem; /* 10px */
     flex: 0 1 auto;
     white-space: nowrap;
     border-radius: 0.3125rem; /* 5px */
     color: #ddd;
+    margin-right: 1rem;
+    box-sizing: border-box;
 }
 
 .boton:hover {
@@ -725,4 +735,109 @@ footer a:hover {
 }
 .icono-wrapper:hover {
     margin-right: 130px;  /* Desplaza el siguiente icono cuando se despliega */
+}
+
+
+.slider-contenido {
+    position: relative;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    padding: 0.625rem 0.5rem; /* 10px 0 */
+}
+
+/* Contenedor de las preguntas */
+.infoPreguntas {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+    will-change: transform; /* Optimización para transiciones */
+    margin: 0.625rem 0.625rem; /* 10px 10px */
+    
+}
+
+/* Estilo para cada pregunta */
+.infoPregunta {
+    flex: none;
+    width: 15.625rem; /* 250px */
+    padding: 0.625rem; /* 10px */
+    box-sizing: border-box;
+    text-align: center;
+    border: 0.0625rem solid #ddd; /* 1px */
+    margin: 0.625rem; /* 10px */
+}
+
+/* Flechas de navegación */
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.1); /* Inicialmente casi transparente */
+    border: none;
+    color: white;
+    font-size: 1.5rem; /* 24px */
+    cursor: pointer;
+    padding: 0.625rem; /* 10px */
+    z-index: 1;
+    opacity: 0.3; /* Inicialmente apenas visible */
+    transition: opacity 0.3s ease, background 0.3s ease; /* Transiciones suaves */
+}
+
+/* Flechas a la izquierda y derecha */
+.izq-felcha {
+    left: 0;
+}
+
+.der-flecha {
+    right: 0;
+}
+
+/* Hacer las flechas aún más visibles cuando el mouse está directamente sobre ellas */
+.flecha:hover {
+    opacity: 1; /* Totalmente visible al pasar el mouse sobre la flecha */
+    background: rgba(0, 0, 0, 0.8); /* Más oscuro cuando el mouse está sobre la flecha */
+}
+
+.infoPregunta h1 {
+    background-color: #5eb425;
+    border-radius: 0.625rem 0.625rem 0 0; /* 10px */
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1rem; /* 15px */
+    padding: 0.1875rem; /* 3px */
+}
+
+.infoPregunta p {
+    display: block;
+    background-color: #f3e7e7;
+    margin-top: 0;
+    border-radius: 0 0 0.625rem 0.625rem; /* 10px */
+    font-size: 0.9rem; /* 12px */
+    padding: 0.1875rem;
+}
+
+
+
+.masInfo {
+    display: inline-block; /* Ajusta el ancho al contenido */
+    padding: 0.625rem 0.5rem; /* Espacio alrededor del texto (10px y 8px) */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    text-align: center;
+    border: 0.0625rem solid #ddd; /* 1px */
+    background-color: #c40d0d;
+    border: 0.125rem solid #ebf3f8; /* 2px */
+    text-decoration: none;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    border-radius: 0.3125rem; /* 5px */
+    color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem; /* Tamaño de la fuente (16px) */
+    margin: 0.625rem; /* Espacio alrededor del botón (10px) */
+}
+
+.masInfo:hover {
+    background-color: #a8140a;
+    color: white;
+}
+.chica{
+    display: block;
+    text-align: center;
 }
