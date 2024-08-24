@@ -245,6 +245,9 @@ ul li ul li ul {
     .responsive-img{
         display: none;
     }
+    .linkTFG{
+        text-decoration: underline;
+    }
 
 }
 
@@ -421,8 +424,9 @@ ul li ul li ul {
     margin-bottom: 0.625rem; /* 10px */
 }
 
-#TFG :hover{
+.linkTFG :hover{
     background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
 }
 .linkTFG a{
     color:#000000
